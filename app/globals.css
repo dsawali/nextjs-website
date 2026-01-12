@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@plugin "daisyui";
 
 :root {
   --background: #ffffff;
@@ -10,17 +11,46 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-suse: var(--font-suse-mono);
+  --font-sf: var(--font-sixtyfour);
+  --font-ubuntu: var(--font-ubuntu-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1e1e1e;
+    --foreground: #4af626;
   }
 }
 
 body {
-  background: var(--background);
+  background: url('/circuit.svg');
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-ubuntu);
+}
+
+@layer base {
+  h1 {
+    @apply text-4xl font-bold;
+    font-family: var(--font-ubuntu);
+  }
+}
+
+@layer components {
+  .section-default {
+    @apply flex justify-center min-h-screen;
+  }
+
+  .hero-title {
+    @apply text-4xl md:text-5xl lg:text-7xl leading-tight;
+    font-family: var(--font-sf);
+  }
+
+  .side-nav {
+    @apply sticky items-center top-1/2 left-20 z-50;
+  }
+
+  .window-terminal {
+    @apply bg-black text-[#4af626] font-mono p-4 rounded-lg border-2 border-[#4af626] shadow-[0_0_20px_#4af6264d] overflow-hidden flex flex-col transition-all duration-300 ease-in-out hover:scale-[1.02] hover:shadow-[0_0_35px_#4af62680];
+  }
 }

@@ -1,0 +1,5 @@
+{
+  "Programming Languages": ["TypeScript", "JavaScript", "Go", "Python", "C#", "Java", "C", "C++", "Java", "HTML/CSS", "SQL"],
+  "Frameworks": ["Node.js", "NextJS", "React.js", "Express", "Selenium", "Jasmine", "Jest", "Mocha/Chai"],
+  "Tools": ["Git", "Docker", "MySQL", "MongoDB", "GraphQL", "Jenkins", "Github Actions", "Kubernetes", "Kafka"]
+}
