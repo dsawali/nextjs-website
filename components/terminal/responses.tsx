@@ -5,7 +5,8 @@ const responses = {
   projects: 
   `Libra\n↳ Discord bot to observe stock prices via text-based commands\nAnime recommendation model\n↳ An older project I created to recommend an anime based on existing user preferences, built using MyAnimeList data.\nTaquito\n↳ An open source TypeScript library for Tezos blockchain development that I heavily contributed to during my time at ECAD Labs Inc.\n\nFeel free to drop by my Github page for more info!`,
   education: `I graduated from Simon Fraser University with a BSc in Computer Science in 2019; Graduated with Co-op`,
-  hobbies: `At times when I'm not coding, I like to powerlift, play video games, and nerd out on pour over coffee.`
+  hobbies: `At times when I'm not coding, I like to powerlift, play video games, and nerd out on pour over coffee.`,
+  contact: `You can reach me via email at jnthndavis95@gmail.com.`,
 }
 
 export default responses;

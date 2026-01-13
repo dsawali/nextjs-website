@@ -25,7 +25,7 @@ export const commands: Record<string, Command> = {
   },
   contact: {
     description: 'My contact information',
-    action: () => 'You can reach me at contact@example.com or via my socials.',
+    action: () => responses.contact,
   },
   skills: {
     description: 'A quick summary of my skills',
